@@ -1,6 +1,7 @@
 import conexao_banco 
 import autenticacao 
 import pandas as pd
+from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
 from gerar_classes_pydantic import GerarPydantic
@@ -62,7 +63,9 @@ for db in lista_db:
         lista_schemas.update({db:df})
         
 
-query_create_full =""
+query_create_full =f""" -- Atualizado em {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} 
+                  
+                  """
 for db in lista_db:
     query_create_db = f"""
     IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = '{db}')
@@ -100,7 +103,7 @@ for nm,tables in lista_schemas.items():
 
         valores = tabela.values.tolist()
 
-        query_inicio = f"""
+        query_inicio = f"""  -- Atualizado em {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}
 
         IF OBJECT_ID('{nm_db}.dbo.{nm_table}', 'U') IS NULL
         BEGIN

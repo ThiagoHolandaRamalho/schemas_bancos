@@ -1,6 +1,6 @@
 
 
-from src.autenticacao import autenticacao
+from autenticacao import autenticacao
 import pyodbc
 global autenticador
 autenticador = autenticacao

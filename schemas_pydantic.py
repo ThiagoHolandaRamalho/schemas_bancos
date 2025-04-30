@@ -12,6 +12,45 @@ class SchemaAdventureworksdwbuildversion(BaseModel):
 
 
 
+class SchemaCategories(BaseModel):
+    category_id : int
+    category_name : str
+    description : str
+    picture : str
+
+
+
+
+class SchemaCustomer_customer_demo(BaseModel):
+    customer_id : int
+    customer_type_id : int
+
+
+
+
+class SchemaCustomer_demographics(BaseModel):
+    customer_type_id : int
+    customer_desc : int
+
+
+
+
+class SchemaCustomers(BaseModel):
+    customer_id : str
+    company_name : str
+    contact_name : str
+    contact_title : str
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    phone : str
+    fax : str
+
+
+
+
 class SchemaDatabaselog(BaseModel):
     DatabaseLogID : int
     PostTime : datetime
@@ -311,6 +350,36 @@ class SchemaDimscenario(BaseModel):
 
 
 
+class SchemaEmployee_territories(BaseModel):
+    employee_id : int
+    territory_id : int
+
+
+
+
+class SchemaEmployees(BaseModel):
+    employee_id : int
+    last_name : str
+    first_name : str
+    title : str
+    title_of_courtesy : str
+    birth_date : date
+    hire_date : date
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    home_phone : str
+    extension : int
+    photo : str
+    notes : str
+    reports_to : int
+    photo_path : str
+
+
+
+
 class SchemaFactadditionalinternationalproductdescription(BaseModel):
     ProductKey : int
     CultureName : str
@@ -469,6 +538,13 @@ class SchemaFactsurveyresponse(BaseModel):
 
 
 
+class SchemaFiliais(BaseModel):
+    cd_filial : int
+    Filial : str
+
+
+
+
 class SchemaFin_fechamento_emissao(BaseModel):
     id : int
     cd_apolice : int
@@ -487,6 +563,50 @@ class SchemaNewfactcurrencyrate(BaseModel):
     EndOfDayRate : float
     CurrencyKey : int
     DateKey : int
+
+
+
+
+class SchemaOrder_details(BaseModel):
+    order_id : int
+    product_id : int
+    unit_price : float
+    quantity : int
+    discount : float
+
+
+
+
+class SchemaOrders(BaseModel):
+    order_id : int
+    customer_id : str
+    employee_id : int
+    order_date : date
+    required_date : date
+    shipped_date : date
+    ship_via : int
+    freight : float
+    ship_name : str
+    ship_address : str
+    ship_city : str
+    ship_region : str
+    ship_postal_code : str
+    ship_country : str
+
+
+
+
+class SchemaProducts(BaseModel):
+    product_id : int
+    product_name : str
+    supplier_id : int
+    category_id : int
+    quantity_per_unit : str
+    unit_price : float
+    units_in_stock : int
+    units_on_order : int
+    reorder_level : int
+    discontinued : int
 
 
 
@@ -520,12 +640,277 @@ class SchemaProspectivebuyer(BaseModel):
 
 
 
+class SchemaRegion(BaseModel):
+    region_id : int
+    region_description : str
+
+
+
+
+class SchemaScenario(BaseModel):
+    ScenarioKey : int
+    ScenarioName : str
+
+
+
+
+class SchemaShippers(BaseModel):
+    shipper_id : int
+    company_name : str
+    phone : str
+
+
+
+
+class SchemaSuppliers(BaseModel):
+    supplier_id : int
+    company_name : str
+    contact_name : str
+    contact_title : str
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    phone : str
+    fax : str
+    homepage : str
+
+
+
+
 class SchemaSysdiagrams(BaseModel):
     name : str
     principal_id : int
     diagram_id : int
     version : int
     definition : bytes
+
+
+
+
+class SchemaTerritories(BaseModel):
+    territory_id : int
+    territory_description : str
+    region_id : int
+
+
+
+
+class SchemaUs_states(BaseModel):
+    state_id : int
+    state_name : str
+    state_abbr : str
+    state_region : str
+
+
+
+
+class SchemaVendas(BaseModel):
+    data : int
+    ID_Venda : int
+    Data_Venda : date
+    data_iso : date
+    nrmes : int
+    Produto : str
+    Quantidade : int
+    trimestre : int
+    ano : int
+    Valor_Total : float
+    produtor : int
+    semestre : int
+
+
+
+
+class SchemaVendas_net(BaseModel):
+    ID_Venda : int
+    Data_Venda : date
+    Produto : str
+    Quantidade : int
+    Valor_Total : float
+    produtor : int
+
+
+
+
+class SchemaCategories(BaseModel):
+    category_id : int
+    category_name : str
+    description : str
+    picture : str
+
+
+
+
+class SchemaCustomer_customer_demo(BaseModel):
+    customer_id : int
+    customer_type_id : int
+
+
+
+
+class SchemaCustomer_demographics(BaseModel):
+    customer_type_id : int
+    customer_desc : int
+
+
+
+
+class SchemaCustomers(BaseModel):
+    customer_id : str
+    company_name : str
+    contact_name : str
+    contact_title : str
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    phone : str
+    fax : str
+
+
+
+
+class SchemaEmployee_territories(BaseModel):
+    employee_id : int
+    territory_id : int
+
+
+
+
+class SchemaEmployees(BaseModel):
+    employee_id : int
+    last_name : str
+    first_name : str
+    title : str
+    title_of_courtesy : str
+    birth_date : date
+    hire_date : date
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    home_phone : str
+    extension : int
+    photo : str
+    notes : str
+    reports_to : int
+    photo_path : str
+
+
+
+
+class SchemaFact_vendas_por_vendedor(BaseModel):
+    comp : str
+    employee_id : int
+    first_name : str
+    last_name : str
+    product_id : int
+    product_name : str
+    total : Decimal
+
+
+
+
+class SchemaFiliais(BaseModel):
+    cd_filial : int
+    Filial : str
+
+
+
+
+class SchemaOrder_details(BaseModel):
+    order_id : int
+    product_id : int
+    unit_price : float
+    quantity : int
+    discount : float
+
+
+
+
+class SchemaOrders(BaseModel):
+    order_id : int
+    customer_id : str
+    employee_id : int
+    order_date : date
+    required_date : date
+    shipped_date : date
+    ship_via : int
+    freight : float
+    ship_name : str
+    ship_address : str
+    ship_city : str
+    ship_region : str
+    ship_postal_code : str
+    ship_country : str
+
+
+
+
+class SchemaProducts(BaseModel):
+    product_id : int
+    product_name : str
+    supplier_id : int
+    category_id : int
+    quantity_per_unit : str
+    unit_price : float
+    units_in_stock : int
+    units_on_order : int
+    reorder_level : int
+    discontinued : int
+
+
+
+
+class SchemaRegion(BaseModel):
+    region_id : int
+    region_description : str
+
+
+
+
+class SchemaShippers(BaseModel):
+    shipper_id : int
+    company_name : str
+    phone : str
+
+
+
+
+class SchemaSuppliers(BaseModel):
+    supplier_id : int
+    company_name : str
+    contact_name : str
+    contact_title : str
+    address : str
+    city : str
+    region : str
+    postal_code : str
+    country : str
+    phone : str
+    fax : str
+    homepage : str
+
+
+
+
+class SchemaTerritories(BaseModel):
+    territory_id : int
+    territory_description : str
+    region_id : int
+
+
+
+
+class SchemaUs_states(BaseModel):
+    state_id : int
+    state_name : str
+    state_abbr : str
+    state_region : str
 
 
 
@@ -557,6 +942,35 @@ class SchemaBilhetes_cyber(BaseModel):
 
 
 
+class SchemaF_bilhetes(BaseModel):
+    id_apolice : int
+    id : int
+    uuid : str
+    uuidInstallments : str
+    Plan : str
+    name : str
+    nameSocial : str
+    cpf : str
+    status : str
+    quotecounter : str
+    luckyNumber : str
+    cotationDate : str
+    expirationDate : str
+    cancelMotivo : str
+    cancelDate : str
+    IdEndosso : str
+    cdApolice : str
+    ComissionFee : str
+    TariffPrize : str
+    FIF : str
+    RenewalFrom : str
+    UF : str
+    created_at : datetime
+    att : datetime
+
+
+
+
 class SchemaParcelas_cyber(BaseModel):
     id : int
     installmentDate : str
@@ -571,6 +985,147 @@ class SchemaParcelas_cyber(BaseModel):
     paymentDate : str
     uuidInstallments : str
     created_at : datetime
+
+
+
+
+class SchemaAvaliacoes(BaseModel):
+    cliente_id : int
+    produto_id : int
+    nota : int
+    comentario : str
+    data_avaliacao : date
+
+
+
+
+class SchemaCarrinho(BaseModel):
+    cliente_id : int
+    produto_id : int
+    quantidade : int
+    data_adicionado : date
+
+
+
+
+class SchemaCategorias(BaseModel):
+    id : int
+    nome : str
+
+
+
+
+class SchemaClientes(BaseModel):
+    id : int
+    nome : str
+    email : str
+    telefone : str
+    data_registro : date
+
+
+
+
+class SchemaFact_carrinho(BaseModel):
+    cliente_id : int
+    produto_id : int
+    quantidade : int
+    data_adicionado : date
+    dt : datetime
+
+
+
+
+class SchemaFact_pedidos_incremental(BaseModel):
+    id : int
+    cliente_id : int
+    endereco_id : int
+    data_pedido : date
+    status : str
+    created_at : datetime
+
+
+
+
+class SchemaFact_vendas(BaseModel):
+    pedido_id : int
+    cliente_id : int
+    nome : str
+    email : str
+    telefone : str
+    produto_id : int
+    nome_produto : str
+    quantidade : int
+    preco_unitario : float
+    subtotal : float
+
+
+
+
+class SchemaItens_pedidos(BaseModel):
+    pedido_id : int
+    produto_id : int
+    quantidade : int
+    preco_unitario : float
+    subtotal : float
+
+
+
+
+class SchemaPagamentos(BaseModel):
+    id : int
+    pedido_id : int
+    valor : float
+    metodo : str
+    status : str
+    data_pagamento : date
+
+
+
+
+class SchemaPedido_snapshot(BaseModel):
+    id : int
+    status : str
+    dbt_scd_id : str
+    dbt_updated_at : datetime
+    dbt_valid_from : datetime
+    dbt_valid_to : datetime
+
+
+
+
+class SchemaPedidos(BaseModel):
+    id : int
+    cliente_id : int
+    endereco_id : int
+    data_pedido : date
+    status : str
+
+
+
+
+class SchemaProdutos(BaseModel):
+    id : int
+    nome : str
+    descricao : str
+    categoria_id : int
+    preco : float
+    marca : str
+    estoque : int
+    data_cadastro : date
+
+
+
+
+class SchemaSnap_pedidos(BaseModel):
+    id_scd : int
+    version : int
+    date_from : datetime
+    date_to : datetime
+    id : int
+    cliente_id : int
+    endereco_id : int
+    data_pedido : datetime
+    status : str
 
 
 
