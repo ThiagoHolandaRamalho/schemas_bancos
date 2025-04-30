@@ -1,4 +1,4 @@
-  -- Atualizado em 29/04/2025 22:03:09
+  -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.AdventureWorksDWBuildVersion', 'U') IS NULL
         BEGIN
@@ -10,7 +10,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.categories', 'U') IS NULL
         BEGIN
@@ -24,7 +24,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.customer_customer_demo', 'U') IS NULL
         BEGIN
@@ -36,7 +36,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.customer_demographics', 'U') IS NULL
         BEGIN
@@ -48,7 +48,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.customers', 'U') IS NULL
         BEGIN
@@ -69,7 +69,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DatabaseLog', 'U') IS NULL
         BEGIN
@@ -87,7 +87,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimAccount', 'U') IS NULL
         BEGIN
@@ -107,7 +107,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimCurrency', 'U') IS NULL
         BEGIN
@@ -120,7 +120,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimCustomer', 'U') IS NULL
         BEGIN
@@ -159,7 +159,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimDate', 'U') IS NULL
         BEGIN
@@ -188,7 +188,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimDepartmentGroup', 'U') IS NULL
         BEGIN
@@ -201,7 +201,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimEmployee', 'U') IS NULL
         BEGIN
@@ -242,7 +242,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimGeography', 'U') IS NULL
         BEGIN
@@ -263,7 +263,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:09
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimOrganization', 'U') IS NULL
         BEGIN
@@ -278,7 +278,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimProduct', 'U') IS NULL
         BEGIN
@@ -324,7 +324,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimProductCategory', 'U') IS NULL
         BEGIN
@@ -339,7 +339,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimProductSubcategory', 'U') IS NULL
         BEGIN
@@ -355,7 +355,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimPromotion', 'U') IS NULL
         BEGIN
@@ -381,7 +381,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimReseller', 'U') IS NULL
         BEGIN
@@ -411,7 +411,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimSalesReason', 'U') IS NULL
         BEGIN
@@ -425,7 +425,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimSalesTerritory', 'U') IS NULL
         BEGIN
@@ -441,7 +441,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.DimScenario', 'U') IS NULL
         BEGIN
@@ -453,7 +453,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.employee_territories', 'U') IS NULL
         BEGIN
@@ -465,7 +465,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.employees', 'U') IS NULL
         BEGIN
@@ -493,7 +493,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactAdditionalInternationalProductDescription', 'U') IS NULL
         BEGIN
@@ -506,7 +506,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactCallCenter', 'U') IS NULL
         BEGIN
@@ -530,7 +530,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactCurrencyRate', 'U') IS NULL
         BEGIN
@@ -545,7 +545,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactFinance', 'U') IS NULL
         BEGIN
@@ -563,7 +563,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactInternetSales', 'U') IS NULL
         BEGIN
@@ -599,7 +599,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactInternetSalesReason', 'U') IS NULL
         BEGIN
@@ -612,7 +612,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactProductInventory', 'U') IS NULL
         BEGIN
@@ -629,7 +629,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactResellerSales', 'U') IS NULL
         BEGIN
@@ -666,7 +666,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactSalesQuota', 'U') IS NULL
         BEGIN
@@ -683,7 +683,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FactSurveyResponse', 'U') IS NULL
         BEGIN
@@ -701,7 +701,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.filiais', 'U') IS NULL
         BEGIN
@@ -713,7 +713,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.FIN_fechamento_emissao', 'U') IS NULL
         BEGIN
@@ -729,7 +729,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.NewFactCurrencyRate', 'U') IS NULL
         BEGIN
@@ -745,7 +745,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.order_details', 'U') IS NULL
         BEGIN
@@ -760,7 +760,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.orders', 'U') IS NULL
         BEGIN
@@ -784,7 +784,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.products', 'U') IS NULL
         BEGIN
@@ -804,7 +804,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.ProspectiveBuyer', 'U') IS NULL
         BEGIN
@@ -838,7 +838,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.region', 'U') IS NULL
         BEGIN
@@ -850,7 +850,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.scenario', 'U') IS NULL
         BEGIN
@@ -862,7 +862,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.shippers', 'U') IS NULL
         BEGIN
@@ -875,7 +875,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.suppliers', 'U') IS NULL
         BEGIN
@@ -897,7 +897,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.sysdiagrams', 'U') IS NULL
         BEGIN
@@ -912,7 +912,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.territories', 'U') IS NULL
         BEGIN
@@ -925,7 +925,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.us_states', 'U') IS NULL
         BEGIN
@@ -939,7 +939,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.vendas', 'U') IS NULL
         BEGIN
@@ -961,7 +961,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('AdventureWorksDW2019.dbo.vendas_net', 'U') IS NULL
         BEGIN
@@ -977,7 +977,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.categories', 'U') IS NULL
         BEGIN
@@ -991,7 +991,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.customer_customer_demo', 'U') IS NULL
         BEGIN
@@ -1003,7 +1003,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.customer_demographics', 'U') IS NULL
         BEGIN
@@ -1015,7 +1015,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.customers', 'U') IS NULL
         BEGIN
@@ -1036,7 +1036,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.employee_territories', 'U') IS NULL
         BEGIN
@@ -1048,7 +1048,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.employees', 'U') IS NULL
         BEGIN
@@ -1076,7 +1076,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.fact_vendas_por_vendedor', 'U') IS NULL
         BEGIN
@@ -1093,7 +1093,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.filiais', 'U') IS NULL
         BEGIN
@@ -1105,7 +1105,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.order_details', 'U') IS NULL
         BEGIN
@@ -1120,7 +1120,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.orders', 'U') IS NULL
         BEGIN
@@ -1144,7 +1144,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.products', 'U') IS NULL
         BEGIN
@@ -1164,7 +1164,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.region', 'U') IS NULL
         BEGIN
@@ -1176,7 +1176,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.shippers', 'U') IS NULL
         BEGIN
@@ -1189,7 +1189,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.suppliers', 'U') IS NULL
         BEGIN
@@ -1211,7 +1211,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.territories', 'U') IS NULL
         BEGIN
@@ -1224,7 +1224,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('dbt.dbo.us_states', 'U') IS NULL
         BEGIN
@@ -1238,7 +1238,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('innoveo.dbo.bilhetes_cyber', 'U') IS NULL
         BEGIN
@@ -1270,7 +1270,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('innoveo.dbo.f_bilhetes', 'U') IS NULL
         BEGIN
@@ -1304,7 +1304,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('innoveo.dbo.parcelas_cyber', 'U') IS NULL
         BEGIN
@@ -1327,7 +1327,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.avaliacoes', 'U') IS NULL
         BEGIN
@@ -1342,7 +1342,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.carrinho', 'U') IS NULL
         BEGIN
@@ -1356,7 +1356,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.categorias', 'U') IS NULL
         BEGIN
@@ -1368,7 +1368,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.clientes', 'U') IS NULL
         BEGIN
@@ -1383,7 +1383,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.fact_carrinho', 'U') IS NULL
         BEGIN
@@ -1398,7 +1398,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.fact_pedidos_incremental', 'U') IS NULL
         BEGIN
@@ -1414,7 +1414,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.fact_vendas', 'U') IS NULL
         BEGIN
@@ -1434,7 +1434,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.itens_pedidos', 'U') IS NULL
         BEGIN
@@ -1449,7 +1449,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.pagamentos', 'U') IS NULL
         BEGIN
@@ -1465,7 +1465,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.pedido_snapshot', 'U') IS NULL
         BEGIN
@@ -1481,7 +1481,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.pedidos', 'U') IS NULL
         BEGIN
@@ -1496,7 +1496,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.produtos', 'U') IS NULL
         BEGIN
@@ -1514,7 +1514,7 @@
         END; 
 
 
-                      -- Atualizado em 29/04/2025 22:03:10
+                      -- Atualizado em 29/04/2025 22:07:58
 
         IF OBJECT_ID('vendas.dbo.snap_pedidos', 'U') IS NULL
         BEGIN

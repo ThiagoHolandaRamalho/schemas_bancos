@@ -1,3 +1,7 @@
+
+
+### Atualizado em 29/04/2025 22:07:58
+
 from pydantic import BaseModel
 from datetime import datetime,date,timedelta
 from  decimal import Decimal
