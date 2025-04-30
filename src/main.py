@@ -176,7 +176,7 @@ def git_push(commit_msg="Atualização via script"):
         subprocess.run(["git", "add", "schemas_pydantic.py"], check=True)
 
         subprocess.run(["git", "commit", "-m", commit_msg], check=True)
-        subprocess.run(["git", "push"], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
 
         print("Push realizado com sucesso.")
 
