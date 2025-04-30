@@ -1,4 +1,4 @@
- -- Atualizado em 29/04/2025 23:04:20 
+ -- Atualizado em 29/04/2025 23:04:32 
                   
                   
     IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'AdventureWorksDW2019')

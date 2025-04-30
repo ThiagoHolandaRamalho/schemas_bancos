@@ -1,6 +1,6 @@
 
 
-### Atualizado em 29/04/2025 23:04:20
+### Atualizado em 29/04/2025 23:04:32
 
 from pydantic import BaseModel
 from datetime import datetime,date,timedelta
