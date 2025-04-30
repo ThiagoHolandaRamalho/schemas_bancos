@@ -6,6 +6,34 @@ import warnings
 warnings.filterwarnings('ignore')
 from gerar_classes_pydantic import GerarPydantic
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+import subprocess
+
+# Substitua abaixo pelas suas informações
+usuario = f"{os.getenv('USER_GIT')}"
+token = f"{os.getenv('TOKEN_GIT')}"
+repositorio = f"{usuario}/{os.getenv('REPOSITORIO')}"
+
+def git_push(commit_msg="Atualização via script"):
+    try:
+        remote_url = f"https://{usuario}:{token}@github.com/{repositorio}.git"
+
+        # Altera a URL remota para incluir o token
+        subprocess.run(["git", "remote", "set-url", "origin", remote_url], check=True)
+
+        # Add, commit e push
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+
+        print("Push realizado com sucesso.")
+
+    except subprocess.CalledProcessError as e:
+        print("Erro ao executar comando git:", e)
 
 
 
@@ -142,6 +170,10 @@ for nm,tables in lista_schemas.items():
         with open('schemas_pydantic.py','w',encoding='utf-8') as arquivo:
             arquivo.write(query_pydantic)
         
+
+
+# Executa
+git_push("Commit automático com token")
 
 if __name__ =='__main__':       
    ...
