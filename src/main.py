@@ -13,27 +13,6 @@ load_dotenv()
 
 import subprocess
 
-# Substitua abaixo pelas suas informações
-usuario = f"{os.getenv('USER_GIT')}"
-token = f"{os.getenv('TOKEN_GIT')}"
-repositorio = f"{usuario}/{os.getenv('REPOSITORIO')}"
-
-def git_push(commit_msg="Atualização via script"):
-    try:
-        remote_url = f"https://{usuario}:{token}@github.com/{repositorio}.git"
-
-        # Altera a URL remota para incluir o token
-        subprocess.run(["git", "remote", "set-url", "origin", remote_url], check=True)
-
-        # Add, commit e push
-        subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", commit_msg], check=True)
-        subprocess.run(["git", "push", "origin", "main"], check=True)
-
-        print("Push realizado com sucesso.")
-
-    except subprocess.CalledProcessError as e:
-        print("Erro ao executar comando git:", e)
 
 
 
@@ -113,7 +92,11 @@ for db in lista_db:
 
 
 query_full = ""
-query_pydantic ="""from pydantic import BaseModel
+query_pydantic =f"""
+
+### Atualizado em {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}
+
+from pydantic import BaseModel
 from datetime import datetime,date,timedelta
 from  decimal import Decimal
   \n\n\n\n"""
@@ -172,8 +155,33 @@ for nm,tables in lista_schemas.items():
         
 
 
+# Substitua abaixo pelas suas informações
+usuario = f"{os.getenv('USER_GIT')}"
+token = f"{os.getenv('TOKEN_GIT')}"
+repositorio = f"{usuario}/{os.getenv('REPOSITORIO')}"
+
+def git_push(commit_msg="Atualização via script"):
+    try:
+        remote_url = f"https://{usuario}:{token}@github.com/{repositorio}.git"
+
+        # Altera a URL remota para incluir o token
+        subprocess.run(["git", "remote", "set-url", "origin", remote_url], check=True)
+
+        # Add, commit e push
+        subprocess.run(["git", "add", "Query_criacao_DATABASE.sql"], check=True)
+        subprocess.run(["git", "add", "Query_criacao_tabelas.sql"], check=True)
+        subprocess.run(["git", "add", "schemas_pydantic.py"], check=True)
+
+        subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+
+        print("Push realizado com sucesso.")
+
+    except subprocess.CalledProcessError as e:
+        print("Erro ao executar comando git:", e)
+
 # Executa
-git_push("Commit automático com token")
+git_push(f"Commit automático com token {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
 
 if __name__ =='__main__':       
    ...
