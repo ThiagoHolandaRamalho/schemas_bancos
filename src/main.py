@@ -159,14 +159,17 @@ for nm,tables in lista_schemas.items():
 usuario = f"{os.getenv('USER_GIT')}"
 token = f"{os.getenv('TOKEN_GIT')}"
 repositorio = f"{usuario}/{os.getenv('REPOSITORIO')}"
+email= f"{os.getenv('USER_EMAIL')}"
 
 def git_push(commit_msg="Atualização via script"):
     try:
         remote_url = f"https://{usuario}:{token}@github.com/{repositorio}.git"
 
+        subprocess.run(["git", "config", "--global", "user.email", email])
+        subprocess.run(["git", "config", "--global", "user.name", usuario])
+
         # Altera a URL remota para incluir o token
         subprocess.run(["git", "remote", "set-url", "origin", remote_url], check=True)
-
         # Add, commit e push
         subprocess.run(["git", "add", "Query_criacao_DATABASE.sql"], check=True)
         subprocess.run(["git", "add", "Query_criacao_tabelas.sql"], check=True)
